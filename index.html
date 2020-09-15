@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>greatlearning</title>   
+<link href="greatlearning.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li class="home"><i class="fas fa-home"></i></li>
+            <li class="boards"></a>Boards  <i class="fas fa-th-list"></i></li>
+            <li class="blank"><input type="text"></li>
+            <li class="Heading">Tralala</li>
+            <li class="icons"><i class="fas fa-plus"></i></li>
+            <li class="contact"><i class="fas fa-user"></i></li>
+        </ul>
+    </div>
+    
+    <h4 class="second-heading">
+       Frontend Training
+    </h4>
+       <div>
+        <i class="fas fa-ellipsis-v"></i>
+        Show Menu
+       </div>
+
+    <!--html body for th box model-->
+
+    <div class="box">
+        <b>To Do</b><br><br>
+        <p>Learn HTML 
+          <i class="task-edit fas fa-pencil-alt pointer"></i>
+        </p>
+        <p>Learn CSS</p>
+        <p>Learn Javascript</p>
+        <div id="button">+Add another card </div>
+    </div>
+    
+    <div class="box1">
+        <b>Doing</b>
+        <p>Prepare resume</p>
+        <p>Enter a title for this card...</p>
+        <span>Add Card</span>
+        <i class="fa fa-times"></i>
+    </div>
+    
+    <div class="box2">
+        <b>Testing/Verifying</b>
+        <p>Twitter app Frontend</p>
+       <div id="form">+Add another Card</div>
+    </div>
+    
+    <div class="box3">
+     <b>Deploying</b>
+    <p>Twitter app backend</p>
+     +Add another card
+    </div>
+
+    <div class="box4">
+        <b>Done</b>
+        <p>+Add card</p>
+    </div>
+
+    <div class="box5">
+        +Add another list
+    </div>
+
+    <div class="box6">
+        <p>Enter list title............</p>
+       <span>Add List</span>
+       <i class="fa fa-times"></i>
+    </div>
+
+    <script>
+        var clickerButton = document.getElementById("button");
+        var onButtonClick = function(){
+            clickerButton.textContent = "Add List Form";
+        };
+        clickerButton.addEventListener("click",onButtonClick);
+
+    var clickButton = document.getElementById("form");
+    var onButtonClick = function(){
+        clickButton.textContent = "Add Card";
+    };
+    clickButton.addEventListener("click",onButtonClick);
+</script>
+</body>
+</html> 
